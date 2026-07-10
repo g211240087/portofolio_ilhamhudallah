@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Menggunakan Font Montserrat agar terlihat elegan dan profesional -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Menggunakan Font Awesome untuk icon media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
 
+        body {
+            /* Background gradasi elegan yang nyaman di mata orang dewasa */
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Container utama yang pas untuk layar smartphone */
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        /* Gaya Foto Profil Bulat */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        /* Wrapper untuk tombol-tombol link */
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Desain Tombol dengan efek Glassmorphism (Simpel & Mewah) */
+        .link-card {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px 24px;
+            border-radius: 12px;
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efek ketika tombol ditekan/di-hover */
+        .link-card:active, .link-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.25);
+        }
+
+        /* Pengaturan Icon di sebelah kiri teks */
+        .link-card i {
+            font-size: 1.3rem;
+            width: 30px;
+            text-align: left;
+        }
+
+        /* Warna spesifik ikon untuk estetika yang tetap rapi */
+        .fa-whatsapp { color: #25D366; }
+        .fa-instagram { color: #E1306C; }
+        .fa-tiktok { color: #fe2c55; }
+        .fa-threads { color: #ffffff; }
+        .fa-youtube { color: #FF0000; }
+
+        /* Footer teks kecil di bawah */
+        footer {
+            margin-top: 48px;
+            font-size: 0.75rem;
+            color: #64748b;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto Profil (Ganti foto-profil.jpg dengan file fotomu) -->
+        <img src="foto-profil.jpg" alt="Foto Profil" class="profile-img">
+        
+        <!-- Nama dan Bio Singkat -->
+        <h1>Nama Anda</h1>
+        <p class="bio">Digital Creator & Tech Enthusiast</p>
+        
+        <!-- Daftar Link Media Sosial -->
+        <div class="links-wrapper">
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="link-card">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/username_kamu" target="_blank" class="link-card">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@username_kamu" target="_blank" class="link-card">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+
+            <!-- Threads -->
+            <a href="https://threads.net/@username_kamu" target="_blank" class="link-card">
+                <i class="fa-brands fa-threads"></i>
+                <span>Threads</span>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com/@channel_kamu" target="_blank" class="link-card">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </a>
+
+        </div>
+
+        <footer>
+            &copy; 2026 Connect With Me.
+        </footer>
+    </div>
+
+</body>
+</html>
